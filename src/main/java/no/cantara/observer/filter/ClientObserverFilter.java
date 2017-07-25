@@ -33,6 +33,7 @@ public class ClientObserverFilter implements Filter {
         } else {
             log.trace("Request is not HttpServletRequest.");
         }
+        filterChain.doFilter(servletRequest, servletResponse);
 
 
     }

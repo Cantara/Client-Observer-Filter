@@ -23,6 +23,21 @@
     <logging.slf4j.version>1.7.25</logging.slf4j.version>
   </properties>
 
+  <repositories>
+    <!-- Needed for parent  -->
+    <repository>
+      <id>cantara-releases</id>
+      <name>Cantara Release Repository</name>
+      <url>http://mvnrepo.cantara.no/content/repositories/releases/</url>
+    </repository>
+    <!-- Needed for SDK snapshots  -->
+    <repository>
+      <id>cantara-snapshots</id>
+      <name>Cantara Snapshot Repository</name>
+      <url>http://mvnrepo.cantara.no/content/repositories/snapshots/</url>
+    </repository>
+  </repositories>
+
   <dependencies>
     <dependency>
       <groupId>javax.servlet</groupId>
