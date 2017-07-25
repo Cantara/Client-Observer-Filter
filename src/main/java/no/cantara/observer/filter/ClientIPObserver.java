@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 public class ClientIPObserver {
 
     public String findClientIp(HttpServletRequest request) {
-        return null;
+        String ip = request.getRemoteAddr();
+        return ip;
     }
 }
