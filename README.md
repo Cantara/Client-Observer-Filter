@@ -5,9 +5,19 @@ Includin this library into your api you will be able to observe your users indiv
 
 ## Integration
 
+In pom.xml
+``` 
+<dependency>
+  <groupId>no.cantara.observer</groupId>
+  <artifactId>client-observer-filter</artifactId>
+  <version>0.1-SNAPSHOT</version>
+</dependency>
+```
+
 ### Dropwizard
 ```
-environment.servlets().addFilter("/*", new ClientObserverFilter());
+environment.servlets().addFilter("ClientObserverFilter", new ClientObserverFilter())
+  .addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true, "/*");
 
 ```
 
@@ -16,3 +26,20 @@ environment.servlets().addFilter("/*", new ClientObserverFilter());
 TODO - Look for reporting.cantara.io maybe?
 
 ### Logs
+
+#### Dropwizard 
+``` 
+logging:
+  level: INFO
+  ...
+  loggers:
+    ....
+    "ClientObserverFilter":
+      level: TRACE
+      additive: false
+      appenders:
+        - type: file
+          currentLogFilename: log/client-observer-filter.log
+          archivedLogFilenamePattern: log/client-observer-filter-%d.log.gz
+          archivedFileCount: 20
+```

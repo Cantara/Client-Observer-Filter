@@ -1,6 +1,8 @@
 package no.cantara.observer.filter;
 
 import org.slf4j.Logger;
+import org.valuereporter.agent.MonitorReporter;
+import org.valuereporter.agent.activity.ObservedActivity;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
@@ -30,6 +32,11 @@ public class ClientObserverFilter implements Filter {
             String forwardedClientIp = awsClientIPObserver.findClientIp((HttpServletRequest) servletRequest);
             String clientIp = clientIPObserver.findClientIp((HttpServletRequest) servletRequest);
             filterLog.info("Client Request from {}. Forwarded from {}", clientIp, forwardedClientIp);
+            // Report to Valuereporter
+            ObservedActivity observedActivity = new ObservedActivity("client-access", System.currentTimeMillis());
+            observedActivity.put("ip", clientIp);
+
+            MonitorReporter.reportActivity(observedActivity);
         } else {
             log.trace("Request is not HttpServletRequest.");
         }
