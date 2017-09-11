@@ -23,6 +23,12 @@
     <logging.slf4j.version>1.7.25</logging.slf4j.version>
   </properties>
 
+  <scm>
+    <developerConnection>scm:git:ssh://git@github.com:Cantara/Client-Observer-Filter.git</developerConnection>
+    <connection>scm:git:https://github.com/cantara/Client-Observer-Filter.git</connection>
+    <url>https://github.com/cantara/Client-Observer-Filter.git</url>
+  </scm>
+
   <repositories>
     <!-- Needed for parent  -->
     <repository>
@@ -39,14 +45,14 @@
   </repositories>
   <distributionManagement>
     <repository>
-      <id>capra-releases</id>
-      <name>capra-releases</name>
-      <url>https://mvnrepo.capraconsulting.no/content/repositories/releases</url>
+      <id>cantara-releases</id>
+      <name>cantara-releases</name>
+      <url>https://mvnrepo.cantara.no/content/repositories/releases</url>
     </repository>
     <snapshotRepository>
-      <id>capra-snapshots</id>
-      <name>capra-releases</name>
-      <url>https://mvnrepo.capraconsulting.no/content/repositories/snapshots</url>
+      <id>cantara-snapshots</id>
+      <name>cantara-releases</name>
+      <url>https://mvnrepo.cantara.no/content/repositories/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
 
