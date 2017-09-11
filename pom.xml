@@ -24,9 +24,10 @@
   </properties>
 
   <scm>
-    <developerConnection>scm:git:ssh://git@github.com:Cantara/Client-Observer-Filter.git</developerConnection>
+    <developerConnection>scm:git:ssh://git@github.com/cantara/Client-Observer-Filter.git</developerConnection>
     <connection>scm:git:https://github.com/cantara/Client-Observer-Filter.git</connection>
-    <url>https://github.com/cantara/Client-Observer-Filter.git</url>
+    <url>https://wiki.cantara.no/display/iot/Home</url>
+    <tag>https://github.com/cantara/Client-Observer-Filter</tag>
   </scm>
 
   <repositories>
