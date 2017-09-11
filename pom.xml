@@ -3,7 +3,7 @@
 
   <groupId>no.cantara.observer</groupId>
   <artifactId>client-observer-filter</artifactId>
-  <version>0.1.4-SNAPSHOT</version>
+  <version>0.1.4</version>
   <packaging>jar</packaging>
 
   <name>client-observer-filter</name>
@@ -32,7 +32,7 @@
     <developerConnection>scm:git:ssh://git@github.com/cantara/Client-Observer-Filter.git</developerConnection>
     <connection>scm:git:https://github.com/cantara/Client-Observer-Filter.git</connection>
     <url>https://wiki.cantara.no/display/iot/Home</url>
-    <tag>https://github.com/cantara/Client-Observer-Filter</tag>
+    <tag>client-observer-filter-0.1.4</tag>
   </scm>
 
 
