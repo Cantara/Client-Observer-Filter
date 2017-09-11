@@ -37,6 +37,18 @@
       <url>http://mvnrepo.cantara.no/content/repositories/snapshots/</url>
     </repository>
   </repositories>
+  <distributionManagement>
+    <repository>
+      <id>capra-releases</id>
+      <name>capra-releases</name>
+      <url>https://mvnrepo.capraconsulting.no/content/repositories/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>capra-snapshots</id>
+      <name>capra-releases</name>
+      <url>https://mvnrepo.capraconsulting.no/content/repositories/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
 
   <dependencies>
     <dependency>
