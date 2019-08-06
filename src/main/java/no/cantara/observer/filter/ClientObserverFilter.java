@@ -1,8 +1,8 @@
 package no.cantara.observer.filter;
 
 import org.slf4j.Logger;
-import org.valuereporter.agent.MonitorReporter;
-import org.valuereporter.agent.activity.ObservedActivity;
+import org.valuereporter.client.MonitorReporter;
+import org.valuereporter.activity.ObservedActivity;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
