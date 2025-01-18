@@ -20,7 +20,7 @@
     <javax.servlet-api.version>4.0.1</javax.servlet-api.version>
     <constretto.version>2.2.2</constretto.version>
     <guava.version>18.0</guava.version>
-    <assertj.version>3.27.2</assertj.version>
+    <assertj.version>3.27.3</assertj.version>
     <junit.jupiter.version>5.11.3</junit.jupiter.version>
     <junit.vintage.version>5.11.3</junit.vintage.version>
     <junit.platform.version>1.11.3</junit.platform.version>
