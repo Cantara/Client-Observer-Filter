@@ -24,7 +24,7 @@
     <junit.jupiter.version>5.13.4</junit.jupiter.version>
     <junit.vintage.version>5.13.4</junit.vintage.version>
     <junit.platform.version>1.13.4</junit.platform.version>
-    <mockito.version>5.18.0</mockito.version>
+    <mockito.version>5.19.0</mockito.version>
     <logging.slf4j.version>2.0.17</logging.slf4j.version>
   </properties>
 
