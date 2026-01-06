@@ -21,8 +21,8 @@
     <constretto.version>2.2.2</constretto.version>
     <guava.version>18.0</guava.version>
     <assertj.version>3.27.6</assertj.version>
-    <junit.jupiter.version>5.14.2</junit.jupiter.version>
-    <junit.vintage.version>5.14.2</junit.vintage.version>
+    <junit.jupiter.version>6.0.2</junit.jupiter.version>
+    <junit.vintage.version>6.0.2</junit.vintage.version>
     <junit.platform.version>1.14.2</junit.platform.version>
     <mockito.version>5.21.0</mockito.version>
     <logging.slf4j.version>2.0.17</logging.slf4j.version>
