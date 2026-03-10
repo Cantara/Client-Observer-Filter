@@ -1,0 +1,21 @@
+id: client-observer-filter
+name: Client Observer Filter
+version: 0.2-SNAPSHOT
+description: |
+  Servlet filter library for observing individual user behaviour in web APIs.
+  Transparently records request patterns per user and forwards them to the
+  Valuereporter service for analysis.
+units:
+  - id: observer-filter
+    name: Observer Filter
+    type: library
+    description: JAX-RS/Servlet filter implementation — intercepts requests and captures user activity.
+    path: src/main/java/no/cantara/clientobserver
+  - id: event-model
+    name: Event Model
+    type: component
+    description: Observed request data model capturing endpoint, user, timestamp, and latency.
+  - id: reporter
+    name: Reporter
+    type: component
+    description: Async forwarding of captured activity records to the Valuereporter REST API.
