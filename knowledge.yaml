@@ -1,3 +1,17 @@
+kcp_version: "0.21"
+updated: "2026-06-20"
+language: en
+license: "Apache-2.0"
+indexing: private
+temporal:
+  valid_from: "2026-03-10"
+signing:
+  scheme: ed25519
+  scope: this-manifest
+  public_key: "MCowBQYDK2VwAyEAuipgusnqU9vjf3p2yPVLD/DmERT6tBbLOqEETdxAhMU="
+  signature: "https://raw.githubusercontent.com/Cantara/Client-Observer-Filter/master/knowledge.yaml.sig"
+not_for: []
+
 id: client-observer-filter
 name: Client Observer Filter
 version: 0.2-SNAPSHOT
@@ -11,11 +25,20 @@ units:
     type: library
     description: JAX-RS/Servlet filter implementation — intercepts requests and captures user activity.
     path: src/main/java/no/cantara/clientobserver
+      content_hash:
+        algorithm: sha256
+        value: ""
   - id: event-model
     name: Event Model
     type: component
     description: Observed request data model capturing endpoint, user, timestamp, and latency.
+      content_hash:
+        algorithm: sha256
+        value: ""
   - id: reporter
     name: Reporter
     type: component
     description: Async forwarding of captured activity records to the Valuereporter REST API.
+      content_hash:
+        algorithm: sha256
+        value: ""
