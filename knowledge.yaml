@@ -1,4 +1,4 @@
-kcp_version: "0.21"
+kcp_version: "0.26"
 updated: "2026-06-20"
 language: en
 license: "Apache-2.0"
@@ -25,20 +25,19 @@ units:
     type: library
     description: JAX-RS/Servlet filter implementation — intercepts requests and captures user activity.
     path: src/main/java/no/cantara/clientobserver
-      content_hash:
-        algorithm: sha256
-        value: ""
   - id: event-model
     name: Event Model
     type: component
     description: Observed request data model capturing endpoint, user, timestamp, and latency.
-      content_hash:
-        algorithm: sha256
-        value: ""
   - id: reporter
     name: Reporter
     type: component
     description: Async forwarding of captured activity records to the Valuereporter REST API.
-      content_hash:
-        algorithm: sha256
-        value: ""
+
+# Serving Endpoint Binding (KCP SPEC v0.26 §3.12): authoritative manifest URL
+# and authorized MCP representative. Ignored by pre-0.26 verifiers.
+serving:
+  manifest:
+    - https://raw.githubusercontent.com/Cantara/Client-Observer-Filter/master/knowledge.yaml
+  mcp:
+    - https://mcp.cantara.no/mcp
