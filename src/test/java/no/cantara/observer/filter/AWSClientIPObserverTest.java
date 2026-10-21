@@ -3,7 +3,7 @@ package no.cantara.observer.filter;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletRequest;
 
 import static no.cantara.observer.filter.AWSClientIPObserver.CLIENT_IP_HEADER;
 import static org.junit.jupiter.api.Assertions.*;
