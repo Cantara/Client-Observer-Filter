@@ -23,9 +23,9 @@
     <assertj.version>3.27.7</assertj.version>
     <junit.jupiter.version>5.14.4</junit.jupiter.version>
     <junit.vintage.version>5.14.4</junit.vintage.version>
-    <junit.platform.version>1.14.4</junit.platform.version>
     <mockito.version>5.24.0</mockito.version>
     <logging.slf4j.version>2.0.20</logging.slf4j.version>
+    <maven-surefire-plugin.version>3.6.0</maven-surefire-plugin.version>
   </properties>
 
   <scm>
@@ -87,12 +87,6 @@
 
     <!-- Test -->
     <dependency>
-      <groupId>org.junit.platform</groupId>
-      <artifactId>junit-platform-runner</artifactId>
-      <version>${junit.platform.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
       <groupId>org.junit.jupiter</groupId>
       <artifactId>junit-jupiter-engine</artifactId>
       <version>${junit.jupiter.version}</version>
@@ -125,4 +119,17 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <!-- the parent supplies 2.20, which predates the JUnit Platform
+             provider: this repo's Jupiter test is invisible to it and the
+             build passes with "Tests run: 0" -->
+        <version>${maven-surefire-plugin.version}</version>
+      </plugin>
+    </plugins>
+  </build>
 </project>
