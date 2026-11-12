@@ -4,8 +4,8 @@ import org.slf4j.Logger;
 import org.valuereporter.client.MonitorReporter;
 import org.valuereporter.activity.ObservedActivity;
 
-import javax.servlet.*;
-import javax.servlet.http.HttpServletRequest;
+import jakarta.servlet.*;
+import jakarta.servlet.http.HttpServletRequest;
 import java.io.IOException;
 
 import static org.slf4j.LoggerFactory.getLogger;
