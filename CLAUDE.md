@@ -7,7 +7,7 @@ A servlet filter library that identifies and observes API clients by tracking co
 - Language: Java 8+
 - Framework: Servlet API (Dropwizard compatible)
 - Build: Maven
-- Key dependencies: javax.servlet-api, Constretto, Guava, SLF4J
+- Key dependencies: jakarta.servlet-api (provided by the container), Constretto, Guava, SLF4J
 
 ## Architecture
 Standalone servlet filter library designed to be embedded into any Java web application. It intercepts HTTP requests, extracts client identification data (cookies, IP, user-agent), and logs observations. Follows a simple filter-chain pattern with pluggable reporting.
